@@ -276,14 +276,18 @@ INT_PTR CALLBACK ViewQuotesDialog(HWND hDlg, UINT message, WPARAM wParam, LPARAM
         CreateWindowW(L"STATIC", L"Number", WS_VISIBLE | WS_CHILD, 10, 10, 50, height, hDlg, NULL, hInst, NULL);
         CreateWindowW(L"STATIC", L"Quote Name", WS_VISIBLE | WS_CHILD, 70, 10, 100, height, hDlg, NULL, hInst, NULL);
         CreateWindowW(L"STATIC", L"Customer Name", WS_VISIBLE | WS_CHILD, 180, 10, 100, height, hDlg, NULL, hInst, NULL);
-        CreateWindowW(L"STATIC", L"Price", WS_VISIBLE | WS_CHILD, 290, 10, 50, height, hDlg, NULL, hInst, NULL);
+        CreateWindowW(L"STATIC", L"Material", WS_VISIBLE | WS_CHILD, 290, 10, 100, height, hDlg, NULL, hInst, NULL);
+        CreateWindowW(L"STATIC", L"Size", WS_VISIBLE | WS_CHILD, 400, 10, 50, height, hDlg, NULL, hInst, NULL);
+        CreateWindowW(L"STATIC", L"Price", WS_VISIBLE | WS_CHILD, 460, 10, 50, height, hDlg, NULL, hInst, NULL);
 
         // Create text boxes for each quote
         for (size_t i = 0; i < CPQDbAdapter.quotes.size(); ++i) {
             CreateWindowW(L"STATIC", std::to_wstring(i + 1).c_str(), WS_VISIBLE | WS_CHILD, 10, yPos, 50, height, hDlg, NULL, hInst, NULL);
             CreateWindowW(L"STATIC", CPQDbAdapter.quotes[i].quoteName.c_str(), WS_VISIBLE | WS_CHILD, 70, yPos, 100, height, hDlg, NULL, hInst, NULL);
             CreateWindowW(L"STATIC", CPQDbAdapter.quotes[i].customerName.c_str(), WS_VISIBLE | WS_CHILD, 180, yPos, 100, height, hDlg, NULL, hInst, NULL);
-            CreateWindowW(L"STATIC", (L"$" + std::to_wstring(CPQDbAdapter.quotes[i].price)).c_str(), WS_VISIBLE | WS_CHILD, 290, yPos, 50, height, hDlg, NULL, hInst, NULL);
+            CreateWindowW(L"STATIC", CPQDbAdapter.quotes[i].material.c_str(), WS_VISIBLE | WS_CHILD, 290, yPos, 100, height, hDlg, NULL, hInst, NULL);
+            CreateWindowW(L"STATIC", CPQDbAdapter.quotes[i].size.c_str(), WS_VISIBLE | WS_CHILD, 400, yPos, 50, height, hDlg, NULL, hInst, NULL);
+            CreateWindowW(L"STATIC", (L"$" + std::to_wstring(CPQDbAdapter.quotes[i].price)).c_str(), WS_VISIBLE | WS_CHILD, 460, yPos, 50, height, hDlg, NULL, hInst, NULL);
 
             yPos += height + margin; // Update y position for the next quote
         }
@@ -299,6 +303,7 @@ INT_PTR CALLBACK ViewQuotesDialog(HWND hDlg, UINT message, WPARAM wParam, LPARAM
     }
     return (INT_PTR)FALSE;
 }
+
 
 INT_PTR CALLBACK DeleteQuoteDialog(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
     UNREFERENCED_PARAMETER(lParam);
