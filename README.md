@@ -54,8 +54,10 @@ CPQ Software is a **desktop application** built with C++ and SQLite for configur
 5. **Deleting a Quote**:
     - Click on "Delete Quote" button.
     - Enter the quote number to delete and confirm.
-
-
+    
+6. **DB file**:
+    - The 'quotes.db' file is a simple database file that will be created in the same directory.
+    
 ## Contributing & Feedback
 
 Contributions are welcome! Please fork the repository and submit pull requests for any enhancements or bug fixes.
