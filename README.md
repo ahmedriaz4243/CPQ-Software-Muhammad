@@ -20,9 +20,7 @@ CPQ Software is a **desktop application** built with C++ and SQLite for configur
 ### Building the Project
 
 1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/cpq-software.git
-    ```
+    
 2. **Open the Project**:
     Open the project in your preferred C++ development environment (e.g., Visual Studio).
 
@@ -65,5 +63,5 @@ Contributions are welcome! Please fork the repository and submit pull requests f
 ## Acknowledgments
 
 - SQLite for providing a simple and efficient database solution.
-- The C++ community and Microsoft Learn for providing valuable resources for desktop development..
+- The C++ community and [Microsoft Learn]([https://www.sqlite.org/download.html](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=msvc-170)) for providing valuable resources for desktop development..
 
