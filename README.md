@@ -65,5 +65,5 @@ Contributions are welcome! Please fork the repository and submit pull requests f
 ## Acknowledgments
 
 - SQLite for providing a simple and efficient database solution.
-- The C++ community for providing valuable resources and tutorials.
+- The C++ community and Microsoft Learn for providing valuable resources for desktop development..
 
