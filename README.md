@@ -63,5 +63,5 @@ Contributions are welcome! Please fork the repository and submit pull requests f
 ## Acknowledgments
 
 - SQLite for providing a simple and efficient database solution.
-- The C++ community and [Microsoft Learn]([https://www.sqlite.org/download.html](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=msvc-170)) for providing valuable resources for desktop development..
+- The C++ community and [Microsoft Learn](https://www.sqlite.org/download.html](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=msvc-170) for providing valuable resources for desktop development..
 
